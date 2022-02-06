@@ -1,0 +1,64 @@
+{
+  "name": "@activewidgets/date-fns",
+  "version": "0.0.1",
+  "description": "ActiveWidgets date-fns integration",
+  "author": "ActiveWidgets SARL",
+  "license": "MIT",
+  "main": "./dist/date-fns.js",
+  "module": "./dist/esm/date-fns.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run lint && rimraf dist/* && rollup -c",
+    "lint": "eslint **/*.js -f unix",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@activewidgets/options": "^3",
+    "date-fns": "^2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7",
+    "@babel/preset-env": "^7",
+    "@rollup/plugin-babel": "^5",
+    "@rollup/plugin-node-resolve": "^13",
+    "eslint": "^8",
+    "rimraf": "^3",
+    "rollup": "^2",
+    "rollup-plugin-terser": "^7"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "globals": {
+      "Promise": true
+    },
+    "rules": {
+      "no-prototype-builtins": "off"
+    },
+    "env": {
+      "browser": true
+    }
+  },
+  "eslintIgnore": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/activewidgets/date-fns.git"
+  },
+  "keywords": [
+    "datagrid",
+    "date-fns"
+  ],
+  "bugs": {
+    "url": "https://github.com/activewidgets/date-fns/issues"
+  },
+  "homepage": "https://github.com/activewidgets/date-fns#readme"
+}
