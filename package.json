@@ -1,6 +1,6 @@
 {
   "name": "@activewidgets/date-fns",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ActiveWidgets date-fns integration",
   "author": "ActiveWidgets SARL",
   "license": "MIT",
@@ -51,7 +51,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/activewidgets/date-fns.git"
+    "url": "https://github.com/activewidgets/date-fns.git"
   },
   "keywords": [
     "datagrid",
